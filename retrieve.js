@@ -29,13 +29,13 @@ http.createServer(function(request, response) {
             var collection = db.collection('users');
 
             //We have a cursor now with our find criteria
-            var results = collection.find({});
+            var results = collection.find({age: {$lte:30}});
 
             //We need to sort by age descending
-            results.sort({age: -1});
+           // results.sort({age: -1});
 
             //Skip specified records. 0 for skipping 0 records.
-            results.skip(1);
+           // results.skip(1);
 
 
             //Lets iterate on the result
