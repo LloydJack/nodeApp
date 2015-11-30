@@ -35,7 +35,7 @@ http.createServer(function(request, response) {
             results.sort({age: -1});
 
             //Skip specified records. 0 for skipping 0 records.
-            results.skip(0);
+            results.skip(1);
 
 
             //Lets iterate on the result
